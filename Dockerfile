@@ -6,7 +6,8 @@ WORKDIR /app
 
 ## Step 2:
 # Copy source code to working directory
-COPY . app.py
+COPY . app.py /app/
+COPY . requirements.txt /app/
 
 ## Step 3:
 # Install packages from requirements.txt
