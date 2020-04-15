@@ -40,3 +40,21 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Making Predictions
+
+To make a prediction, with the app running:  './make_prediction.sh'
+
+### Project Files
+
+* .circle/config.yml: config file for the circleci workflow
+* model_data: pretrained data model
+* output_txt_files: Docker and Kubernetes logs
+* app.py: Machine Learning Microservice Flask API
+* Dockerfile: Dockerfile for running the application
+* make_prediction.sh: script to make prediction
+* Makefile: Project Makefile
+* requirements.txt: environment config file
+* run_docker.sh: script to run the application in a Docker
+* run_kubernetes: script to run the application with kubernetes
+* upload_docker.sh: script to upload the built Docker image to DockerHub 
