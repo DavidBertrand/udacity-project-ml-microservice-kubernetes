@@ -11,7 +11,8 @@ dockerpath="bertrand282/ml-microservice"
 # Step 2
 # Run the Docker Hub container with kubernetes
 podname="ml-microservice-pod"
-kubectl run $podname --image=$dockerpath --port=80 --generator=run-pod/v1
+kubectl run $podname --image=$dockerpath --port=80 --generator=run-pod/v1 --labels app=$podname
+
 
 # Step 3:
 # List kubernetes pods
